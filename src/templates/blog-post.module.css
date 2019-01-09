@@ -1,10 +1,47 @@
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.blogPost {
+  background: rgba(23,23,23,.95);
+  padding: 1.5rem;
+}
 
-  height: 12.5em;
-  background: #e1e1e1;
-  margin: -1em -2.5em 1em;
-  font-size: 2em
+.blogPost blockquote {
+  margin: 0;
+  display: block;
+  padding: 1rem 2rem;
+  position: relative;
+}
+.blogPost blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0;
+  transform: translate(-100%, 50%);
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  color: #FF9800;
+  text-align: center;
+}
+
+.blogPost blockquote:after {
+  content: '\201D';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -100%);
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  color: #FF9800;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .blogPost {
+    padding: 3rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .blogPost {
+    padding: 4rem 6rem;
+  }
 }

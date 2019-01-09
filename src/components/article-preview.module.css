@@ -1,5 +1,17 @@
+.preview {
+  background: rgba(23,23,23,.95);
+  overflow: auto;
+  padding: 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
 .previewTitle {
   font-size: 1.5em;
+  margin: 0;
+}
+
+.preview > p > p{
+  font-size: 1.2rem;
 }
 
 .tag {
@@ -11,4 +23,10 @@
   border-radius: 2px;
   border: 1px solid #A0A0A0;
   margin-right: .5em;
+}
+
+@media only screen and (min-width: 600px) {
+  .preview {
+    padding: 1.5rem 4rem;
+  }
 }
